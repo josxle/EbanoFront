@@ -1,0 +1,55 @@
+.sidemenu {
+    font-family: fantasy;
+    background-color: #827da1;
+    width: 250px;
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+    position: relative;
+    z-index: 2;
+    padding-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Para que ocupe toda la altura de la ventana */
+}
+
+.sidemenu.hidden {
+    transform: translateX(-100%);
+}
+
+.menu-item {
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ffffff85;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.menu-item:hover {
+    background-color: #6e6990;
+}
+
+.last-menu-item {
+    color: #d31b1b;
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #ffffff85;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: auto; /* Empuja hacia abajo */
+    transition: background-color 0.2s ease;
+}
+
+.last-menu-item:hover {
+    background-color: #6e6990;
+}
